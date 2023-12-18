@@ -1,0 +1,7 @@
+Running: xsim.dir/FSM_color_change_TB_behav/xsimk -simmode gui -wdb FSM_color_change_TB_behav.wdb -simrunnum 0 -socket 50923
+Design successfully loaded
+Design Loading Memory Usage: 33532 KB (Peak: 33652 KB)
+Design Loading CPU Usage: 50 ms
+Simulation completed
+Simulation Memory Usage: 115528 KB (Peak: 172800 KB)
+Simulation CPU Usage: 60 ms

@@ -1,0 +1,21 @@
+0.7
+2020.1
+May 27 2020
+19:59:15
+/home/sims0702/DDC_project-main/lab3.sim/sim_1/behav/xsim/glbl.v,1702551792,verilog,,,,glbl,,,,,,,,
+/home/sims0702/DDC_project-main/lab3.srcs/sim_1/new/FSM_VGA_all_NEW_TB.v,1702668798,verilog,,,,FSM_VGA_all_NEW_TB,,,../../../../lab3.srcs/sources_1/bd/design_1/ipshared/8b3d,,,,,
+/home/sims0702/DDC_project-main/lab3.srcs/sim_1/new/FSM_color_change_TB.v,1702709092,verilog,,,,FSM_color_change_TB,,,../../../../lab3.srcs/sources_1/bd/design_1/ipshared/8b3d,,,,,
+/home/sims0702/DDC_project-main/lab3.srcs/sim_1/new/FSM_resize_shape_TB.v,1702607713,verilog,,,,FSM_resize_shape_TB,,,../../../../lab3.srcs/sources_1/bd/design_1/ipshared/8b3d,,,,,
+/home/sims0702/DDC_project-main/lab3.srcs/sim_1/new/whole_design_TB.v,1702567104,verilog,,,,whole_design_TB,,,../../../../lab3.srcs/sources_1/bd/design_1/ipshared/8b3d,,,,,
+/home/sims0702/DDC_project-main/lab3.srcs/sources_1/imports/new/timer_1s.v,1702562244,verilog,,/home/sims0702/DDC_project-main/lab3.srcs/sim_1/new/FSM_resize_shape_TB.v,,timer_1s,,,../../../../lab3.srcs/sources_1/bd/design_1/ipshared/8b3d,,,,,
+/home/sims0702/DDC_project-main/lab3.srcs/sources_1/new/FSM_VGA.v,1702610858,verilog,,/home/sims0702/DDC_project-main/lab3.srcs/sources_1/new/FSM_VGA_all.v,,FSM_VGA,,,../../../../lab3.srcs/sources_1/bd/design_1/ipshared/8b3d,,,,,
+/home/sims0702/DDC_project-main/lab3.srcs/sources_1/new/FSM_VGA_all.v,1702619245,verilog,,/home/sims0702/DDC_project-main/lab3.srcs/sources_1/new/FSM_color_change.v,,FSM_VGA_all,,,../../../../lab3.srcs/sources_1/bd/design_1/ipshared/8b3d,,,,,
+/home/sims0702/DDC_project-main/lab3.srcs/sources_1/new/FSM_color_change.v,1702707915,verilog,,/home/sims0702/DDC_project-main/lab3.srcs/sources_1/new/counter.v,,FSM_color_change,,,../../../../lab3.srcs/sources_1/bd/design_1/ipshared/8b3d,,,,,
+/home/sims0702/DDC_project-main/lab3.srcs/sources_1/new/FSM_resize_shape.v,1702615471,verilog,,/home/sims0702/DDC_project-main/lab3.srcs/sources_1/new/counter.v,,FSM_resize_shape,,,../../../../lab3.srcs/sources_1/bd/design_1/ipshared/8b3d,,,,,
+/home/sims0702/DDC_project-main/lab3.srcs/sources_1/new/VGA_pattern.v,1702551792,verilog,,/home/sims0702/DDC_project-main/lab3.srcs/sources_1/new/VGA_timings.v,,VGA_pattern,,,../../../../lab3.srcs/sources_1/bd/design_1/ipshared/8b3d,,,,,
+/home/sims0702/DDC_project-main/lab3.srcs/sources_1/new/VGA_timings.v,1702551792,verilog,,/home/sims0702/DDC_project-main/lab3.srcs/sources_1/new/counter.v,,VGA_timings,,,../../../../lab3.srcs/sources_1/bd/design_1/ipshared/8b3d,,,,,
+/home/sims0702/DDC_project-main/lab3.srcs/sources_1/new/counter.v,1702618874,verilog,,/home/sims0702/DDC_project-main/lab3.srcs/sources_1/imports/new/timer_1s.v,,counter,,,../../../../lab3.srcs/sources_1/bd/design_1/ipshared/8b3d,,,,,
+/home/sims0702/DDC_project-main/lab3.srcs/sources_1/new/number_counter.v,1702655691,verilog,,/home/sims0702/DDC_project-main/lab3.srcs/sources_1/imports/new/timer_1s.v,,number_counter,,,../../../../lab3.srcs/sources_1/bd/design_1/ipshared/8b3d,,,,,
+/home/sims0702/Documents/lab3/lab3.srcs/sim_1/new/FSM_VGA_TB.v,1702392537,verilog,,,,FSM_VGA_TB,,,../../../../lab3.srcs/sources_1/bd/design_1/ipshared/8b3d,,,,,
+/home/sims0702/Documents/lab3/lab3.srcs/sim_1/new/FSM_VGA_all_TB.v,1702392272,verilog,,,,FSM_VGA_all_TB,,,../../../../lab3.srcs/sources_1/bd/design_1/ipshared/8b3d,,,,,
+/home/sims0702/Documents/lab3/lab3.srcs/sim_1/new/VGA_timing_TB.v,1698764253,verilog,,,,VGA_timing_TB,,,,,,,,

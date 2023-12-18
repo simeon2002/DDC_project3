@@ -1,0 +1,12 @@
+
+{ 
+    crc :  15046917486806347472  , 
+    ccp_crc :  0  , 
+    cmdline : " -wto eb1b6db777824d429f8d9590ebdf74d3 --incr --debug typical --relax --mt 8 -L xil_defaultlib -L unisims_ver -L secureip --snapshot FSM_VGA_TB_func_synth xil_defaultlib.FSM_VGA_TB xil_defaultlib.glbl" , 
+    buildDate : "May 27 2020" , 
+    buildTime : "19:59:15" , 
+    linkCmd : "/usr/bin/gcc -Wa,-W  -O -fPIC  -m64  -Wl,--no-as-needed  -Wl,--unresolved-symbols=ignore-all  -o \"xsim.dir/FSM_VGA_TB_func_synth/xsimk\"   \"xsim.dir/FSM_VGA_TB_func_synth/obj/xsim_0.lnx64.o\" \"xsim.dir/FSM_VGA_TB_func_synth/obj/xsim_1.lnx64.o\" -L\"/tools/Xilinx/Vivado/2020.1/lib/lnx64.o\" -lrdi_simulator_kernel   -lrdi_simbridge_kernel" , 
+    aggregate_nets : 
+    [ 
+    ] 
+} 

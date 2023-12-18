@@ -1,0 +1,351 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:35 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Sat Dec 16 09:34:11 2023
+# Process ID: 1518037
+# Current directory: /home/sims0702/DDC_project-main/lab3.runs/design_1_FSM_VGA_all_0_0_synth_1
+# Command line: vivado -log design_1_FSM_VGA_all_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_FSM_VGA_all_0_0.tcl
+# Log file: /home/sims0702/DDC_project-main/lab3.runs/design_1_FSM_VGA_all_0_0_synth_1/design_1_FSM_VGA_all_0_0.vds
+# Journal file: /home/sims0702/DDC_project-main/lab3.runs/design_1_FSM_VGA_all_0_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source design_1_FSM_VGA_all_0_0.tcl -notrace
+Command: synth_design -top design_1_FSM_VGA_all_0_0 -part xc7z020clg400-1 -mode out_of_context
+Starting synth_design
+WARNING: [IP_Flow 19-3571] IP 'design_1_FSM_VGA_all_0_0' is restricted:
+* Module reference is stale and needs refreshing.
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 1518275
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 2079.086 ; gain = 0.000 ; free physical = 1556 ; free virtual = 4887
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_FSM_VGA_all_0_0' [/home/sims0702/DDC_project-main/lab3.srcs/sources_1/bd/design_1/ip/design_1_FSM_VGA_all_0_0/synth/design_1_FSM_VGA_all_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'FSM_VGA_all' [/home/sims0702/DDC_project-main/lab3.srcs/sources_1/new/FSM_VGA_all.v:23]
+	Parameter CLOCK_FREQ bound to: 500000 - type: integer 
+	Parameter CLOCK_FREQ_RESIZE bound to: 1000000 - type: integer 
+	Parameter CLOCK_FREQ_COLOR bound to: 1000000 - type: integer 
+	Parameter SHAPE_SIZEX bound to: 50 - type: integer 
+	Parameter SHAPE_SIZEY bound to: 50 - type: integer 
+	Parameter SHAPEX bound to: 290 - type: integer 
+	Parameter SHAPEY bound to: 210 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'FSM_resize_shape' [/home/sims0702/DDC_project-main/lab3.srcs/sources_1/new/FSM_resize_shape.v:23]
+	Parameter shape_sizeX bound to: 50 - type: integer 
+	Parameter shape_sizeY bound to: 50 - type: integer 
+	Parameter CLOCK_FREQ bound to: 1000000 - type: integer 
+	Parameter LOWER_LIMIT bound to: 5 - type: integer 
+	Parameter UPPER_LIMIT bound to: 100 - type: integer 
+	Parameter sInit bound to: 3'b000 
+	Parameter sIdle bound to: 3'b001 
+	Parameter sWait bound to: 3'b010 
+	Parameter sResizeX_out bound to: 3'b011 
+	Parameter sResizeY_out bound to: 3'b100 
+	Parameter sResizeX_in bound to: 3'b101 
+	Parameter sResizeY_in bound to: 3'b110 
+INFO: [Synth 8-6157] synthesizing module 'timer_1s' [/home/sims0702/DDC_project-main/lab3.srcs/sources_1/imports/new/timer_1s.v:3]
+	Parameter CLOCK_FREQ bound to: 1000000 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'counter' [/home/sims0702/DDC_project-main/lab3.srcs/sources_1/new/counter.v:3]
+	Parameter LIMIT bound to: 1000000 - type: integer 
+	Parameter bits bound to: 19 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'counter' (1#1) [/home/sims0702/DDC_project-main/lab3.srcs/sources_1/new/counter.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'timer_1s' (2#1) [/home/sims0702/DDC_project-main/lab3.srcs/sources_1/imports/new/timer_1s.v:3]
+INFO: [Synth 8-226] default block is never used [/home/sims0702/DDC_project-main/lab3.srcs/sources_1/new/FSM_resize_shape.v:81]
+INFO: [Synth 8-6155] done synthesizing module 'FSM_resize_shape' (3#1) [/home/sims0702/DDC_project-main/lab3.srcs/sources_1/new/FSM_resize_shape.v:23]
+INFO: [Synth 8-6157] synthesizing module 'FSM_VGA' [/home/sims0702/DDC_project-main/lab3.srcs/sources_1/new/FSM_VGA.v:3]
+	Parameter CLOCK_FREQ bound to: 500000 - type: integer 
+	Parameter shapeX bound to: 290 - type: integer 
+	Parameter shapeY bound to: 210 - type: integer 
+	Parameter VERTICAL_MIN bound to: 0 - type: integer 
+	Parameter VERTICAL_MAX bound to: 480 - type: integer 
+	Parameter HORIZONTAL_MIN bound to: 0 - type: integer 
+	Parameter HORIZONTAL_MAX bound to: 640 - type: integer 
+	Parameter sInit bound to: 3'b000 
+	Parameter sIdle bound to: 3'b001 
+	Parameter sWait bound to: 3'b010 
+	Parameter sMove_up bound to: 3'b011 
+	Parameter sMove_right bound to: 3'b100 
+	Parameter sMove_down bound to: 3'b101 
+	Parameter sMove_left bound to: 3'b110 
+	Parameter sReshape bound to: 3'b111 
+INFO: [Synth 8-6157] synthesizing module 'timer_1s__parameterized0' [/home/sims0702/DDC_project-main/lab3.srcs/sources_1/imports/new/timer_1s.v:3]
+	Parameter CLOCK_FREQ bound to: 500000 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'counter__parameterized0' [/home/sims0702/DDC_project-main/lab3.srcs/sources_1/new/counter.v:3]
+	Parameter LIMIT bound to: 500000 - type: integer 
+	Parameter bits bound to: 18 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'counter__parameterized0' (3#1) [/home/sims0702/DDC_project-main/lab3.srcs/sources_1/new/counter.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'timer_1s__parameterized0' (3#1) [/home/sims0702/DDC_project-main/lab3.srcs/sources_1/imports/new/timer_1s.v:3]
+INFO: [Synth 8-226] default block is never used [/home/sims0702/DDC_project-main/lab3.srcs/sources_1/new/FSM_VGA.v:71]
+INFO: [Synth 8-6155] done synthesizing module 'FSM_VGA' (4#1) [/home/sims0702/DDC_project-main/lab3.srcs/sources_1/new/FSM_VGA.v:3]
+INFO: [Synth 8-6157] synthesizing module 'FSM_color_change' [/home/sims0702/DDC_project-main/lab3.srcs/sources_1/new/FSM_color_change.v:23]
+	Parameter CLOCK_FREQ bound to: 1000000 - type: integer 
+	Parameter INIT_RED bound to: 15 - type: integer 
+	Parameter INIT_BLUE bound to: 0 - type: integer 
+	Parameter INIT_GREEN bound to: 0 - type: integer 
+	Parameter LIMIT bound to: 16 - type: integer 
+	Parameter sInit bound to: 4'b0000 
+	Parameter sIdle bound to: 4'b0001 
+	Parameter sWait bound to: 4'b0010 
+	Parameter sRed_change bound to: 4'b0011 
+	Parameter sBlue_change bound to: 4'b0100 
+	Parameter sGreen_change bound to: 4'b0101 
+	Parameter sRandom_change bound to: 4'b0111 
+	Parameter sPush_random bound to: 4'b1000 
+	Parameter sToggle bound to: 4'b1001 
+INFO: [Synth 8-6155] done synthesizing module 'FSM_color_change' (5#1) [/home/sims0702/DDC_project-main/lab3.srcs/sources_1/new/FSM_color_change.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'FSM_VGA_all' (6#1) [/home/sims0702/DDC_project-main/lab3.srcs/sources_1/new/FSM_VGA_all.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_FSM_VGA_all_0_0' (7#1) [/home/sims0702/DDC_project-main/lab3.srcs/sources_1/bd/design_1/ip/design_1_FSM_VGA_all_0_0/synth/design_1_FSM_VGA_all_0_0.v:58]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 2079.086 ; gain = 0.000 ; free physical = 1628 ; free virtual = 4960
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2079.086 ; gain = 0.000 ; free physical = 1624 ; free virtual = 4956
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 2079.086 ; gain = 0.000 ; free physical = 1624 ; free virtual = 4956
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2079.086 ; gain = 0.000 ; free physical = 1616 ; free virtual = 4948
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2151.887 ; gain = 0.000 ; free physical = 1542 ; free virtual = 4873
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2154.855 ; gain = 2.969 ; free physical = 1541 ; free virtual = 4872
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 2154.855 ; gain = 75.770 ; free physical = 1603 ; free virtual = 4934
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 2154.855 ; gain = 75.770 ; free physical = 1603 ; free virtual = 4934
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 2154.855 ; gain = 75.770 ; free physical = 1603 ; free virtual = 4934
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'rFSM_current_reg' in module 'FSM_resize_shape'
+INFO: [Synth 8-802] inferred FSM for state register 'rFSM_current_reg' in module 'FSM_VGA'
+INFO: [Synth 8-802] inferred FSM for state register 'rFSM_current_reg' in module 'FSM_color_change'
+WARNING: [Synth 8-327] inferring latch for variable 'r_iShape_sizeX_next_reg' [/home/sims0702/DDC_project-main/lab3.srcs/sources_1/new/FSM_resize_shape.v:120]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                   sInit |                              000 |                              000
+                   sIdle |                              110 |                              001
+                   sWait |                              010 |                              010
+            sResizeY_out |                              100 |                              100
+            sResizeX_out |                              101 |                              011
+             sResizeY_in |                              001 |                              110
+             sResizeX_in |                              011 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rFSM_current_reg' using encoding 'sequential' in module 'FSM_resize_shape'
+WARNING: [Synth 8-327] inferring latch for variable 'r_iShape_sizeY_next_reg' [/home/sims0702/DDC_project-main/lab3.srcs/sources_1/new/FSM_resize_shape.v:121]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                   sInit |                          0000001 |                              000
+                   sIdle |                          1000000 |                              001
+                   sWait |                          0000100 |                              010
+                sMove_up |                          0100000 |                              011
+             sMove_right |                          0001000 |                              100
+              sMove_down |                          0010000 |                              101
+              sMove_left |                          0000010 |                              110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rFSM_current_reg' using encoding 'one-hot' in module 'FSM_VGA'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                   sInit |                        001000000 |                             0000
+                   sIdle |                        000100000 |                             0001
+            sPush_random |                        010000000 |                             1000
+                 sToggle |                        100000000 |                             1001
+                   sWait |                        000000010 |                             0010
+          sRandom_change |                        000001000 |                             0111
+             sRed_change |                        000000001 |                             0011
+            sBlue_change |                        000000100 |                             0100
+           sGreen_change |                        000010000 |                             0101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rFSM_current_reg' using encoding 'one-hot' in module 'FSM_color_change'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 2154.855 ; gain = 75.770 ; free physical = 1593 ; free virtual = 4926
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 2     
+	   2 Input   10 Bit       Adders := 8     
+	   2 Input    4 Bit       Adders := 3     
++---Registers : 
+	               10 Bit    Registers := 4     
+	                4 Bit    Registers := 3     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   7 Input   10 Bit        Muxes := 4     
+	   2 Input   10 Bit        Muxes := 4     
+	   6 Input    9 Bit        Muxes := 1     
+	   2 Input    9 Bit        Muxes := 6     
+	   4 Input    9 Bit        Muxes := 1     
+	   4 Input    7 Bit        Muxes := 2     
+	   2 Input    7 Bit        Muxes := 3     
+	   2 Input    4 Bit        Muxes := 6     
+	   9 Input    4 Bit        Muxes := 3     
+	   4 Input    3 Bit        Muxes := 2     
+	   2 Input    3 Bit        Muxes := 3     
+	   7 Input    2 Bit        Muxes := 2     
+	   2 Input    2 Bit        Muxes := 3     
+	   4 Input    2 Bit        Muxes := 2     
+	   7 Input    1 Bit        Muxes := 6     
+	   9 Input    1 Bit        Muxes := 5     
+	   2 Input    1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:10 ; elapsed = 00:00:12 . Memory (MB): peak = 2154.855 ; gain = 75.770 ; free physical = 1578 ; free virtual = 4914
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 2154.855 ; gain = 75.770 ; free physical = 1455 ; free virtual = 4791
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 2154.855 ; gain = 75.770 ; free physical = 1455 ; free virtual = 4791
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:14 ; elapsed = 00:00:17 . Memory (MB): peak = 2154.855 ; gain = 75.770 ; free physical = 1453 ; free virtual = 4789
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 2154.855 ; gain = 75.770 ; free physical = 1450 ; free virtual = 4786
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 2154.855 ; gain = 75.770 ; free physical = 1450 ; free virtual = 4786
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 2154.855 ; gain = 75.770 ; free physical = 1450 ; free virtual = 4786
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 2154.855 ; gain = 75.770 ; free physical = 1450 ; free virtual = 4786
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 2154.855 ; gain = 75.770 ; free physical = 1450 ; free virtual = 4786
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 2154.855 ; gain = 75.770 ; free physical = 1450 ; free virtual = 4786
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |    29|
+|2     |LUT1   |     5|
+|3     |LUT2   |    30|
+|4     |LUT3   |    41|
+|5     |LUT4   |    48|
+|6     |LUT5   |    69|
+|7     |LUT6   |    69|
+|8     |FDRE   |   129|
+|9     |FDSE   |     1|
+|10    |LD     |    20|
++------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 2154.855 ; gain = 75.770 ; free physical = 1450 ; free virtual = 4786
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:18 . Memory (MB): peak = 2154.855 ; gain = 0.000 ; free physical = 1502 ; free virtual = 4838
+Synthesis Optimization Complete : Time (s): cpu = 00:00:16 ; elapsed = 00:00:20 . Memory (MB): peak = 2154.855 ; gain = 75.770 ; free physical = 1502 ; free virtual = 4838
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2154.855 ; gain = 0.000 ; free physical = 1574 ; free virtual = 4909
+INFO: [Netlist 29-17] Analyzing 49 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2154.855 ; gain = 0.000 ; free physical = 1521 ; free virtual = 4857
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 20 instances were transformed.
+  LD => LDCE: 20 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+40 Infos, 3 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 2154.855 ; gain = 75.906 ; free physical = 1655 ; free virtual = 4991
+INFO: [Common 17-1381] The checkpoint '/home/sims0702/DDC_project-main/lab3.runs/design_1_FSM_VGA_all_0_0_synth_1/design_1_FSM_VGA_all_0_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1174] Renamed 10 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/sims0702/DDC_project-main/lab3.runs/design_1_FSM_VGA_all_0_0_synth_1/design_1_FSM_VGA_all_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_FSM_VGA_all_0_0_utilization_synth.rpt -pb design_1_FSM_VGA_all_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Dec 16 09:34:45 2023...

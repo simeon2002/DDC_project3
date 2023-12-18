@@ -1,0 +1,9 @@
+0.7
+2020.1
+May 27 2020
+19:59:15
+/home/sims0702/Documents/lab3/lab3.sim/sim_1/synth/func/xsim/FSM_VGA_TB_func_synth.v,1702375196,verilog,,/home/sims0702/Documents/lab3/lab3.srcs/sources_1/new/FSM_VGA.v,,design_1;design_1_VGA_pattern_0_0;design_1_VGA_pattern_0_0_VGA_pattern;design_1_VGA_timings_0_0;design_1_VGA_timings_0_0_VGA_timings;design_1_VGA_timings_0_0_counter;design_1_VGA_timings_0_0_counter__parameterized0;design_1_clk_wiz_0_0;design_1_clk_wiz_0_0__design_1_clk_wiz_0_0_clk_wiz;design_1_wrapper;design_1_xlconstant_0_0;design_1_xlconstant_0_1;design_1_xlconstant_0_2;glbl,,,../../../../../lab3.srcs/sources_1/bd/design_1/ipshared/8b3d,,,,,
+/home/sims0702/Documents/lab3/lab3.srcs/sim_1/new/FSM_VGA_TB.v,1702375172,verilog,,,,FSM_VGA_TB,,,../../../../../lab3.srcs/sources_1/bd/design_1/ipshared/8b3d,,,,,
+/home/sims0702/Documents/lab3/lab3.srcs/sources_1/imports/new/timer_1s.v,1701166980,verilog,,/home/sims0702/Documents/lab3/lab3.srcs/sim_1/new/FSM_VGA_TB.v,,timer_1s,,,../../../../../lab3.srcs/sources_1/bd/design_1/ipshared/8b3d,,,,,
+/home/sims0702/Documents/lab3/lab3.srcs/sources_1/new/FSM_VGA.v,1702375170,verilog,,/home/sims0702/Documents/lab3/lab3.srcs/sources_1/new/counter.v,,FSM_VGA,,,../../../../../lab3.srcs/sources_1/bd/design_1/ipshared/8b3d,,,,,
+/home/sims0702/Documents/lab3/lab3.srcs/sources_1/new/counter.v,1698746801,verilog,,/home/sims0702/Documents/lab3/lab3.srcs/sources_1/imports/new/timer_1s.v,,counter,,,../../../../../lab3.srcs/sources_1/bd/design_1/ipshared/8b3d,,,,,
